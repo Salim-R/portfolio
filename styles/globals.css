@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a,
+a:visited {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: #fefeff;
+  transition: 0.1s linear;
+  font-size: calc(0.8rem + 0.8vw);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #fefeff;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  transform-origin: left;
+}
+
+a:hover {
+  transform: scale(1.04);
+  color: rgb(217, 217, 217);
+}
+
+a:hover::after {
+  animation: animLink 1.4s infinite ease-in-out;
+}
+
+@keyframes animLink {
+  50% {
+    transform: scaleX(0.2);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+
+.project {
+  position: relative;
+}
+
+.project::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 100%;
+  top: -3px;
+  transition: width 1s ease-out;
+  transition-delay: 0.85s;
+}
+.project-infos {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50px, -50%);
+  margin-left: 10vw;
+  transition: 0.4s ease-out;
+  opacity: 0;
+}
+
+.project-infos a {
+  font-size: calc(1rem + 2vw);
+  color: #ffffff;
+}
+
+.project-infos p {
+  font-size: 2rem;
+  margin-top: 1.5vw;
+  color: #ffffff;
+}.projects-container {
+  margin-top: 100px;
+}.project img {
+  transition: 0.4s ease-out;
+  width: 100%;
+}
+
+.project:hover img {
+  filter: brightness(20%);
+}
+
+.project:hover .project-infos {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
