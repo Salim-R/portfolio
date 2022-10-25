@@ -29,7 +29,10 @@ a::after {
   left: 0;
   transform-origin: left;
 }
-
+.social a:visited{
+  color:inherit
+ 
+}
 a:hover {
   transform: scale(1.04);
   color: rgb(217, 217, 217);
@@ -101,4 +104,17 @@ a:hover::after {
 .project:hover .project-infos {
   opacity: 1;
   transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .text-3xl {
+    text-align: center;
+  }
+  .py-10 p{
+    text-align: center;
+  }
+  .project{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

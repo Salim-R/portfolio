@@ -61,13 +61,22 @@ export default function Home() {
               Developpeur Web
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              passionné d'informatique depuis ma tendre enfance, j'ai entamé une reconversion professionnelle.Récemment diplômé en développement web,
+              passionné d'informatique depuis des années, j'ai entamé une reconversion professionnelle.Récemment diplômé en développement web,
               je continue à me former sur différents langages. Je serais ravi de vous accompagner dans la création de vos différents projets. Vous trouverez ci-dessous les différents languages que j'utilise et les projets que j'ai récemment réalisés. Bonne visite !
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillGithub />
-              <AiFillLinkedin />
-              <AiOutlineInstagram />
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 social">
+              <a
+                href="https://github.com/Salim-R"
+                target="_blank"
+                rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "> <AiFillGithub nav to={"google"} /> </a>
+              <a
+                href="https://www.linkedin.com/in/salim-rhamoumi"
+                target="_blank"
+                rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "> <AiFillLinkedin /> </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "><AiOutlineInstagram /> </a>
             </div>
             <div className="mx-auto rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={salim} layout="fill" objectFit="cover" />
@@ -218,6 +227,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </div >
   );
 }
