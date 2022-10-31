@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import salim from "../public/salim.jpg";
+import salim from "../public/salim.webp";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -67,19 +67,22 @@ export default function Home() {
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 social">
               <a
                 href="https://github.com/Salim-R"
+                aria-label="Github"
                 target="_blank"
                 rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "> <AiFillGithub nav to={"google"} /> </a>
               <a
                 href="https://www.linkedin.com/in/salim-rhamoumi"
+                aria-label="Linkedin"
                 target="_blank"
                 rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "> <AiFillLinkedin /> </a>
               <a
                 href="#"
+                aria-label="Instagram"
                 target="_blank"
                 rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "><AiOutlineInstagram /> </a>
             </div>
             <div className="mx-auto rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={salim} layout="fill" objectFit="cover" />
+              <Image src={salim} alt="photo de profil" layout="fill" objectFit="cover" width={"100%"} height={"100%"} />
             </div>
           </div>
         </section>
@@ -90,7 +93,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10 p-10 ">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={design} alt="design" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Designs élégants
               </h3>
@@ -104,7 +107,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={code} alt="code" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Codez votre projet de rêve
               </h3>
@@ -118,7 +121,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">NodeJs</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image src={consulting} alt="consulting" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Consultant</h3>
               <p className="py-2">
                 Intéressé par des commentaires sur votre projet actuel ? Je peux vous aider à l'améliorer.
@@ -148,6 +151,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 project"  >
               <Image
                 className="rounded-lg object-fill"
+                alt="projet 1"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -162,6 +166,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 project">
               <Image
                 className="rounded-lg object-fill"
+                alt="projet 2"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -175,6 +180,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 project">
               <Image
                 className="rounded-lg object-fill"
+                alt="projet 3"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -188,6 +194,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 project">
               <Image
                 className="rounded-lg object-fill"
+                alt="projet 4"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -201,6 +208,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 project">
               <Image
                 className="rounded-lg object-fill"
+                alt="projet 5"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -214,6 +222,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 project">
               <Image
                 className="rounded-lg object-fill"
+                alt="projet 6"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
