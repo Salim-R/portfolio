@@ -1,6 +1,5 @@
-/* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/no-unescaped-entities */
+
 import Head from "next/head";
 import {
   AiFillGithub,
@@ -20,6 +19,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import Link from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -69,7 +69,7 @@ export default function Home() {
                 href="https://github.com/Salim-R"
                 aria-label="Github"
                 target="_blank"
-                rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "> <AiFillGithub nav to={"google"} /> </a>
+                rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "> <AiFillGithub /> </a>
               <a
                 href="https://www.linkedin.com/in/salim-rhamoumi"
                 aria-label="Linkedin"
@@ -82,7 +82,7 @@ export default function Home() {
                 rel="noopener noreferrer" className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 "><AiOutlineInstagram /> </a>
             </div>
             <div className="mx-auto rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={salim} alt="photo de profil" layout="fill" objectFit="cover" width={"100%"} height={"100%"} />
+              <Image src={salim} alt="photo de profil" layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -93,40 +93,40 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10 p-10 ">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} alt="design" width={100} height={100} />
+              <Image src={design} alt="design" width="100" height="100" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Designs élégants
               </h3>
               <p className="py-2">
                 Créons ensemble un design élégant qui vous convient et adaptés à vos besoins.
               </p>
-              <h4 className="py-4 text-teal-600">Outils de conception que j'utilise</h4>
+              <h4 className="py-4 text-teal-700">Outils de conception que j'utilise</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">canva</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} alt="code" width={100} height={100} />
+              <Image src={code} alt="code" width="100" height="100" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Codez votre projet de rêve
               </h3>
               <p className="py-2">
                 Vous avez une idée pour votre prochain grand site Web? Faisons-en une réalité.
               </p>
-              <h4 className="py-4 text-teal-600">Outils de conception que j'utilise</h4>
+              <h4 className="py-4 text-teal-700">Outils de conception que j'utilise</h4>
               <p className="text-gray-800 py-1">Html/Css/Sass</p>
               <p className="text-gray-800 py-1">Javascript</p>
               <p className="text-gray-800 py-1">ReactJs</p>
               <p className="text-gray-800 py-1">NodeJs</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} alt="consulting" width={100} height={100} />
+              <Image src={consulting} alt="consulting" width="100" height="100" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Consultant</h3>
               <p className="py-2">
                 Intéressé par des commentaires sur votre projet actuel ? Je peux vous aider à l'améliorer.
               </p>
-              <h4 className="py-4 text-teal-600">Amélioration mise en place</h4>
+              <h4 className="py-4 text-teal-700">Amélioration mise en place</h4>
               <p className="text-gray-800 py-1">Référencement SEO</p>
               <p className="text-gray-800 py-1">Temps de chargement</p>
               <p className="text-gray-800 py-1">Mise à jour</p>
@@ -139,8 +139,8 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Depuis le début de mon parcours en tant que développeur web, j'ai travaillé sur des projets effectués pendant ma
-              <span className="text-teal-500"> formation  </span>
-              et créés de nouveaux  <span className="text-teal-500">projets  </span>
+              <span className="text-teal-700"> formation  </span>
+              et créés de nouveaux  <span className="text-teal-700">projets  </span>
               avec des outils à jour
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -157,8 +157,8 @@ export default function Home() {
                 layout="responsive"
                 src={web1}
               />
-              <div class="project-infos">
-                <a href="https://github.com/Salim-R/groupomania" target="_blank">Groupomania x One Piece</a>
+              <div className="project-infos">
+                <Link href="https://github.com/Salim-R/groupomania" target="_blank">Groupomania x One Piece</Link>
                 <p>2022</p>
               </div>
 
@@ -172,8 +172,8 @@ export default function Home() {
                 layout="responsive"
                 src={web2}
               />
-              <div class="project-infos">
-                <a href="https://assocplurielles.com/" target="_blank">Association Pluri'Elles</a>
+              <div className="project-infos">
+                <Link href="https://assocplurielles.com/" target="_blank">Association Pluri'Elles</Link>
                 <p>2022</p>
               </div>
             </div>
@@ -186,8 +186,8 @@ export default function Home() {
                 layout="responsive"
                 src={web3}
               />
-              <div class="project-infos">
-                <a href="https://github.com/Salim-R/P6" target="_blank">Hot Takes</a>
+              <div className="project-infos">
+                <Link href="https://github.com/Salim-R/P6" target="_blank">Hot Takes</Link>
                 <p>2022</p>
               </div>
             </div>
@@ -200,8 +200,8 @@ export default function Home() {
                 layout="responsive"
                 src={web4}
               />
-              <div class="project-infos">
-                <a href="https://www.google.com" target="_blank">Php/Symfony</a>
+              <div className="project-infos">
+                <Link href="https://www.google.com" target="_blank">Php/Symfony</Link>
                 <p>2022</p>
               </div>
             </div>
@@ -214,8 +214,8 @@ export default function Home() {
                 layout="responsive"
                 src={web5}
               />
-              <div class="project-infos">
-                <a href="https://www.google.com" target="_blank">VueJs</a>
+              <div className="project-infos">
+                <Link href="https://www.google.com" target="_blank">VueJs</Link>
                 <p>2022</p>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function Home() {
                 layout="responsive"
                 src={web6}
               />
-              <div class="project-infos">
+              <div className="project-infos">
                 <a href="#" target="_blank">Prochainement...</a>
                 <p>2022</p>
               </div>
