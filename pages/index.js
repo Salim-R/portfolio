@@ -173,7 +173,7 @@ export default function Home() {
                 src={web2}
               />
               <div className="project-infos">
-                <Link href="https://assocplurielles.com/" target="_blank">Association Pluri'Elles</Link>
+                <Link href="#" target="_blank">Association Pluri'Elles</Link>
                 <p>2022</p>
               </div>
             </div>
