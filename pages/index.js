@@ -61,7 +61,7 @@ export default function Home() {
               Developpeur Web
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              passionné d'informatique depuis des années, j'ai entamé une reconversion professionnelle.Récemment diplômé en développement web,
+              passionné d'informatique depuis des années, j'ai été diplômé en développement web,
               je continue à me former sur différents langages. Je serais ravi de vous accompagner dans la création de vos différents projets. Vous trouverez ci-dessous les différents languages que j'utilise et les projets que j'ai récemment réalisés. Bonne visite !
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 social">
@@ -138,10 +138,8 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Depuis le début de mon parcours en tant que développeur web, j'ai travaillé sur des projets effectués pendant ma
-              <span className="text-teal-700"> formation  </span>
-              et créés de nouveaux  <span className="text-teal-700">projets  </span>
-              avec des outils à jour
+              Depuis le début de mon parcours, j'ai travaillé sur divers projets effectués pendant ma
+              avec des outils à jour.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               J'offre une large gamme de services, y compris l'optimisation de site existant, la création de logo et la programmation.
