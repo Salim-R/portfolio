@@ -200,7 +200,7 @@ export default function Home() {
               />
               <div className="project-infos">
                 <Link href="https://www.google.com" target="_blank">Php/Symfony</Link>
-                <p>2022</p>
+                <p>2024</p>
               </div>
             </div>
             <div className="basis-1/3 flex-1 project">
@@ -214,7 +214,7 @@ export default function Home() {
               />
               <div className="project-infos">
                 <Link href="https://www.google.com" target="_blank">VueJs</Link>
-                <p>2022</p>
+                <p>2024</p>
               </div>
             </div>
             <div className="basis-1/3 flex-1 project">
@@ -228,7 +228,7 @@ export default function Home() {
               />
               <div className="project-infos">
                 <a href="#" target="_blank">Prochainement...</a>
-                <p>2022</p>
+                <p>2024</p>
               </div>
             </div>
           </div>
