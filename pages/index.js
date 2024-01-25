@@ -168,7 +168,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={web3}
               />
               <div className="project-infos">
                 <Link href="https://github.com/Salim-R/P6" target="_blank">Hot Takes</Link>
@@ -182,7 +182,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web5}
+                src={web2}
               />
               <div className="project-infos">
                 <Link href="https://www.lacompagnieducheveu.com/en/" target="_blank">LaCompagnieduCheveu</Link>
@@ -210,7 +210,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web3}
+                src={web5}
               />
               <div className="project-infos">
                 <Link href="https://www.google.com" target="_blank">VueJs</Link>
