@@ -171,20 +171,6 @@ export default function Home() {
                 src={web2}
               />
               <div className="project-infos">
-                <Link href="#" target="_blank">Association Pluri'Elles</Link>
-                <p>2022</p>
-              </div>
-            </div>
-            <div className="basis-1/3 flex-1 project">
-              <Image
-                className="rounded-lg object-fill"
-                alt="projet 3"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-              <div className="project-infos">
                 <Link href="https://github.com/Salim-R/P6" target="_blank">Hot Takes</Link>
                 <p>2022</p>
               </div>
@@ -197,6 +183,20 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web4}
+              />
+              <div className="project-infos">
+                <Link href="" target="_blank">LaCompagnieduCheveu</Link>
+                <p>2023</p>
+              </div>
+            </div>
+            <div className="basis-1/3 flex-1 project">
+              <Image
+                className="rounded-lg object-fill"
+                alt="projet 3"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web3}
               />
               <div className="project-infos">
                 <Link href="https://www.google.com" target="_blank">Php/Symfony</Link>
