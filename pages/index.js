@@ -177,7 +177,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1 project">
               <Image
-                className="rounded-lg object-fill"
+                className="rounded-lg object-contain"
                 alt="projet 4"
                 width={"100%"}
                 height={"100%"}
@@ -185,7 +185,7 @@ export default function Home() {
                 src={web2}
               />
               <div className="project-infos">
-                <Link href="https://www.lacompagnieducheveu.com/en/" target="_blank">LaCompagnieduCheveu</Link>
+                <Link href="https://www.lacompagnieducheveu.com/en/" target="_blank">LCDC</Link>
                 <p>2023</p>
               </div>
             </div>
